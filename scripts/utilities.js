@@ -1,4 +1,4 @@
-// function for showing specific section
+// function for showing specific section!!
 function showSectionById(id) {
   document.getElementById("donate-section").classList.add("hidden");
   document.getElementById("history-section").classList.add("hidden");

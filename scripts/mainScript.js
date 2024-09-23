@@ -1,4 +1,4 @@
-// active button
+// active button start
 document.getElementById("show-history").addEventListener("click", function () {
   document.getElementById("show-donation").classList.add("main-button");
   document.getElementById("show-donation").classList.remove("active-btn");
@@ -10,8 +10,9 @@ document.getElementById("show-donation").addEventListener("click", function () {
   document.getElementById("show-history").classList.remove("active-btn");
   document.getElementById("show-donation").classList.add("active-btn");
 });
+// active button end
 
-// show section
+// show section start
 document.getElementById("show-donation").addEventListener("click", function () {
   showSectionById("donate-section");
 });
@@ -19,6 +20,7 @@ document.getElementById("show-donation").addEventListener("click", function () {
 document.getElementById("show-history").addEventListener("click", function () {
   showSectionById("history-section");
 });
+// show section end
 
 // noakhali start
 document
@@ -29,14 +31,14 @@ document
     const noakhaliDonate = getInputFieldValue("noakhali-input");
 
     if (noakhaliDonate <= 0 || isNaN(noakhaliDonate)) {
-      alert("Invalid input!!");
+      alert("Invalid Donation Amount!!");
       return;
     } else {
       const noakhaliBalance = getTextFieldValue("noakhali-balance");
       const mainBalance = getTextFieldValue("main-balance");
       if (noakhaliDonate > mainBalance) {
         alert(
-          "Failed to donate!!\nEntered amount exceeds your current balance."
+          "Failed to donate!!\nEntered amount exceeds your available balance."
         );
         return;
       }
@@ -54,7 +56,6 @@ document
         <p>${currentDate}</p>
       `;
       document.getElementById("history-container").appendChild(div);
-      document.getElementById("no-donation").classList.add("hidden");
       document.getElementById("modal-section").classList.remove("hidden");
     }
   });
@@ -73,14 +74,14 @@ document
     const feniDonate = getInputFieldValue("feni-input");
 
     if (feniDonate <= 0 || isNaN(feniDonate)) {
-      alert("Invalid input!!");
+      alert("Invalid Donation Amount!!");
       return;
     } else {
       const feniBalance = getTextFieldValue("feni-balance");
       const mainBalance = getTextFieldValue("main-balance");
       if (feniDonate > mainBalance) {
         alert(
-          "Failed to donate!!\nEntered amount exceeds your current balance."
+          "Failed to donate!!\nEntered amount exceeds your available balance."
         );
         return;
       }
@@ -93,11 +94,10 @@ document
       const div = document.createElement("div");
       div.classList.add("history-msg");
       div.innerHTML = `
-      <p class = "history-text">${feniDonate} Taka is Donated for Flood Relief in Feni, Bangladesh.</p>
+      <p class = "history-text">${feniDonate} Taka is Donated for Flood Relief in Feni,Bangladesh.</p>
       <p>${currentDate}</p>
     `;
       document.getElementById("history-container").appendChild(div);
-      document.getElementById("no-donation").classList.add("hidden");
       document.getElementById("modal-section").classList.remove("hidden");
     }
   });
@@ -116,21 +116,21 @@ document
     const quotaDonate = getInputFieldValue("quota-input");
 
     if (quotaDonate <= 0 || isNaN(quotaDonate)) {
-      alert("Invalid input!!");
+      alert("Invalid Donation Amount!!");
       return;
     } else {
       const quotaBalance = getTextFieldValue("quota-balance");
       const mainBalance = getTextFieldValue("main-balance");
       if (quotaDonate > mainBalance) {
         alert(
-          "Failed to donate!!\nEntered amount exceeds your current balance."
+          "Failed to donate!!\nEntered amount exceeds your available balance."
         );
         return;
       }
       const newQuotaBalance = quotaBalance + quotaDonate;
       const newMainBalance = mainBalance - quotaDonate;
 
-      document.getElementById("feni-balance").innerText = newQuotaBalance;
+      document.getElementById("quota-balance").innerText = newQuotaBalance;
       document.getElementById("main-balance").innerText = newMainBalance;
       const currentDate = new Date();
       const div = document.createElement("div");
@@ -140,7 +140,6 @@ document
       <p>${currentDate}</p>
     `;
       document.getElementById("history-container").appendChild(div);
-      document.getElementById("no-donation").classList.add("hidden");
       document.getElementById("modal-section").classList.remove("hidden");
     }
   });
