@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/coin.png" type="image/x-icon" />
     <title>Donate Bangladesh</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
         </div>
         <div class="total-coins">
           <img src="assets/coin.png" alt="picture of a coin" />
-          <h2>5500</h2>
+          <h2 id="main-balance">5500</h2>
           <h2>BDT</h2>
         </div>
       </nav>
@@ -25,135 +26,148 @@
 
       <!-- Main-buttons start -->
       <div class="main-buttons-container">
-        <button class="btn-donation">Donation</button>
-        <button class="btn-history">History</button>
+        <button id="show-donation" class="btn-donation">Donation</button>
+        <button id="show-history" class="btn-history">History</button>
       </div>
       <!-- Main-buttons end -->
     </header>
 
     <main class="main-section">
-      <!-- Noakhali-card start -->
-      <div class="cards">
-        <div class="card-image">
-          <img src="assets/noakhali.png" alt="some people are on a boat" />
-        </div>
-        <div>
-          <button class="card-coin-amount">
-            <img src="assets/coin.png" alt="picture of a coin" />
-            <h2>0</h2>
-            <h2>BDT</h2>
-          </button>
-          <div class="card-infos">
-            <h1 class="card-title">Donate for Flood at Noakhali, Bangladesh</h1>
-            <p class="card-description">
-              Noakhali has been severely affected by devastating floods,
-              displacing thousands of families. Urgent help is needed to provide
-              shelter, food, and medical aid to those impacted. Your donation
-              can make a real difference in offering hope to flood victims.
-              Every contribution, no matter how small, brings relief to families
-              in desperate need. Join us in supporting Noakhali by donating
-              today.
-            </p>
+      <section id="donate-section">
+        <!-- Noakhali-card start -->
+        <div class="cards">
+          <div class="card-image">
+            <img src="assets/noakhali.png" alt="some people are on a boat" />
           </div>
+          <div>
+            <button class="card-coin-amount">
+              <img src="assets/coin.png" alt="picture of a coin" />
+              <h2 id="noakhali-balance">0</h2>
+              <h2>BDT</h2>
+            </button>
+            <div class="card-infos">
+              <h1 class="card-title">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="card-description">
+                Noakhali has been severely affected by devastating floods,
+                displacing thousands of families. Urgent help is needed to
+                provide shelter, food, and medical aid to those impacted. Your
+                donation can make a real difference in offering hope to flood
+                victims. Every contribution, no matter how small, brings relief
+                to families in desperate need. Join us in supporting Noakhali by
+                donating today.
+              </p>
+            </div>
 
-          <div class="card-inputs">
-            <input
-              type="text"
-              name=""
-              id=""
-              class="donation-input"
-              placeholder="Write Donation Amount"
-            />
-            <button class="btn-donate-now">Donate Now</button>
+            <div class="card-inputs">
+              <input
+                type="text"
+                name=""
+                id="noakhali-input"
+                class="donation-input"
+                placeholder="Write Donation Amount"
+              />
+              <button id="noakhali-donate-btn" class="btn-donate-now">
+                Donate Now
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Noakhali-card end -->
+        <!-- Noakhali-card end -->
 
-      <!-- Feni-card start -->
-      <div class="cards">
-        <div class="card-image">
-          <img src="assets/feni.png" alt="picture of flood" />
-        </div>
-        <div>
-          <button class="card-coin-amount">
-            <img src="assets/coin.png" alt="picture of a coin" />
-            <h2>0</h2>
-            <h2>BDT</h2>
-          </button>
-          <div class="card-infos">
-            <h1 class="card-title">
-              Donate for Flood Relief in Feni,Bangladesh
-            </h1>
-            <p class="card-description">
-              Donate now to support flood relief efforts in Feni, Bangladesh,
-              where thousands have been displaced due to severe flooding. Your
-              contributions can provide essential supplies such as food, clean
-              water, and medical aid to those in desperate need. Every donation,
-              big or small, helps restore hope and rebuild communities affected
-              by the disaster. Join hands in this humanitarian effort to make a
-              difference in the lives of flood victims. Act now to bring relief
-              and hope to the flood-affected communities in Feni, Bangladesh.
-            </p>
+        <!-- Feni-card start -->
+        <div class="cards">
+          <div class="card-image">
+            <img src="assets/feni.png" alt="picture of flood" />
           </div>
+          <div>
+            <button class="card-coin-amount">
+              <img src="assets/coin.png" alt="picture of a coin" />
+              <h2>0</h2>
+              <h2>BDT</h2>
+            </button>
+            <div class="card-infos">
+              <h1 class="card-title">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="card-description">
+                Donate now to support flood relief efforts in Feni, Bangladesh,
+                where thousands have been displaced due to severe flooding. Your
+                contributions can provide essential supplies such as food, clean
+                water, and medical aid to those in desperate need. Every
+                donation, big or small, helps restore hope and rebuild
+                communities affected by the disaster. Join hands in this
+                humanitarian effort to make a difference in the lives of flood
+                victims. Act now to bring relief and hope to the flood-affected
+                communities in Feni, Bangladesh.
+              </p>
+            </div>
 
-          <div class="card-inputs">
-            <input
-              type="text"
-              name=""
-              id=""
-              class="donation-input"
-              placeholder="Write Donation Amount"
-            />
-            <button class="btn-donate-now">Donate Now</button>
+            <div class="card-inputs">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="donation-input"
+                placeholder="Write Donation Amount"
+              />
+              <button class="btn-donate-now">Donate Now</button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Feni-card end -->
+        <!-- Feni-card end -->
 
-      <!-- Quota-card start -->
-      <div class="cards">
-        <div class="card-image">
-          <img src="assets/quota-protest.png" alt="students protesting" />
-        </div>
-        <div>
-          <button class="card-coin-amount">
-            <img src="assets/coin.png" alt="picture of a coin" />
-            <h2>0</h2>
-            <h2>BDT</h2>
-          </button>
-          <div class="card-infos">
-            <h1 class="card-title">Aid for Injured in the Quota Movement</h1>
-            <p class="card-description">
-              Support is urgently needed for those injured during the Quota
-              Movement protests, where many students and activists were harmed
-              advocating for fair reforms in Bangladesh. Your aid can provide
-              critical medical treatment, rehabilitation, and legal assistance
-              to help the injured recover and rebuild their lives. These brave
-              individuals stood for justice and equality, and now they need our
-              help. By contributing, you can make a tangible difference in their
-              recovery process. Stand with them today and show solidarity in
-              their fight for a just cause.
-            </p>
+        <!-- Quota-card start -->
+        <div class="cards">
+          <div class="card-image">
+            <img src="assets/quota-protest.png" alt="students protesting" />
           </div>
+          <div>
+            <button class="card-coin-amount">
+              <img src="assets/coin.png" alt="picture of a coin" />
+              <h2>0</h2>
+              <h2>BDT</h2>
+            </button>
+            <div class="card-infos">
+              <h1 class="card-title">Aid for Injured in the Quota Movement</h1>
+              <p class="card-description">
+                Support is urgently needed for those injured during the Quota
+                Movement protests, where many students and activists were harmed
+                advocating for fair reforms in Bangladesh. Your aid can provide
+                critical medical treatment, rehabilitation, and legal assistance
+                to help the injured recover and rebuild their lives. These brave
+                individuals stood for justice and equality, and now they need
+                our help. By contributing, you can make a tangible difference in
+                their recovery process. Stand with them today and show
+                solidarity in their fight for a just cause.
+              </p>
+            </div>
 
-          <div class="card-inputs">
-            <input
-              type="text"
-              name=""
-              id=""
-              class="donation-input"
-              placeholder="Write Donation Amount"
-            />
-            <button class="btn-donate-now">Donate Now</button>
+            <div class="card-inputs">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="donation-input"
+                placeholder="Write Donation Amount"
+              />
+              <button class="btn-donate-now">Donate Now</button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Quota-card end -->
+        <!-- Quota-card end -->
+      </section>
+
+      <section id="history-section" class="hidden">
+        <h5>this is history-section</h5>
+      </section>
     </main>
 
     <footer class="footer-section">
       <h5>2024 All Rights Reserved.</h5>
     </footer>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/mainScript.js"></script>
   </body>
 </html>

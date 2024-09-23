@@ -7,6 +7,10 @@
     font-family: "Lexend", sans-serif;
 }
 
+.hidden{
+    display: none;
+}
+
 .header-section{
     max-width: 1440px;
     margin: 0 auto;   
@@ -50,7 +54,7 @@
 }
 
 .main-buttons-container{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
@@ -59,7 +63,19 @@
 
 .btn-donation, .btn-history{
     padding: 16px 32px;
+    background-color: rgba(255,255,255,1);
+    border: 1px	solid rgba(17, 17, 17, 0.3);
     border-radius: 8px;
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.active-btn{
+    background-color: rgb(180, 244, 97);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
     color: rgb(17, 17, 17);
     font-size: 1.25rem;
     font-weight: 600;
@@ -105,7 +121,8 @@
     color: rgba(17, 17, 17, 0.7);
     font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 24px; 
+    margin-bottom: 24px;
+    text-align: justify; 
 }
 
 .donation-input{
@@ -132,6 +149,10 @@
     color: rgba(17, 17, 17);
     font-size: 1.25rem;
     font-weight: 600; 
+}
+
+#history-section{
+    min-height: 50vh;
 }
 
 .footer-section{
