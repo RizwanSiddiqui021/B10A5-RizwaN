@@ -3,11 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Donate Bangladesh</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header-section">
+      <!-- Navigation-bar start -->
+      <nav class="nav-bar">
+        <button class="btn-blog">Blog</button>
+        <div class="main-logo">
+          <img src="assets/logo.png" alt="picture of main logo" />
+          <h2>Donate Bangladesh</h2>
+        </div>
+        <div class="total-coins">
+          <img src="assets/coin.png" alt="picture of a coin" />
+          <h2>5500</h2>
+          <h2>BDT</h2>
+        </div>
+      </nav>
+      <!-- Navigation-bar end -->
+
+      <!-- Main-buttons start -->
+      <div class="main-buttons-container">
+        <button class="btn-donation">Donation</button>
+        <button class="btn-history">History</button>
+      </div>
+      <!-- Main-buttons end -->
+    </header>
+
+    <main class="main-section">
+      <div class="cards">
+        <div class="card-image">
+          <img src="assets/noakhali.png" alt="some people are on a boat" />
+        </div>
+        <div>
+          <button class="card-coin-amount">
+            <img src="assets/coin.png" alt="picture of a coin" />
+            <h2>0</h2>
+            <h2>BDT</h2>
+          </button>
+          <div class="card-infos">
+            <h1 class="card-title">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="card-description">
+              Noakhali has been severely affected by devastating floods,
+              displacing thousands of families. Urgent help is needed to provide
+              shelter, food, and medical aid to those impacted. Your donation
+              can make a real difference in offering hope to flood victims.
+              Every contribution, no matter how small, brings relief to families
+              in desperate need. Join us in supporting Noakhali by donating
+              today.
+            </p>
+          </div>
+
+          <div class="card-inputs">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="donation-input"
+              placeholder="Write Donation Amount"
+            />
+            <button class="btn-donate-now">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

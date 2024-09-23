@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+.header-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    
+}
+
+.nav-bar{
+    background-color: rgb(249, 247, 243);
+    padding-top: 24px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-blog{
+    background-color: rgb(180, 244, 97);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.main-logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.total-coins{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.main-buttons-container{
+    margin-top: 80px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-donation, .btn-history{
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.main-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.card-image{}
+
+.card-coin-amount{
+    background-color: rgba(17, 17, 17, 0.05);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 1rem;
+    font-weight: 400;  
+}
+
+.card-title{
+    color: rgba(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 16px; 
+}
+
+.card-description{
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 24px; 
+}
+
+.donation-input{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+}
+
+.donation-input::placeholder {
+    color: rgba(17, 17, 17, 0.4);
+}
+
+.btn-donate-now{
+    display: block;
+    background-color: rgb(180, 244, 97);
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-radius: 8px;
+    color: rgba(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 600; 
+}
