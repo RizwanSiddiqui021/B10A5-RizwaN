@@ -19,3 +19,13 @@ function getTextFieldValue(id) {
   const textNumber = parseFloat(textValue);
   return textNumber;
 }
+
+// function for getting answers
+function getAnswerById(id) {
+  document.getElementById("answer1").classList.add("hidden");
+  document.getElementById("answer2").classList.add("hidden");
+  document.getElementById("answer3").classList.add("hidden");
+  document.getElementById("answer4").classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}

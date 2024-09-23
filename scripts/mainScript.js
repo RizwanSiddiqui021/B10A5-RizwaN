@@ -1,3 +1,9 @@
+// blog button start
+document.getElementById("blog-button").addEventListener("click", function () {
+  window.location.href = "/blog.html";
+});
+// blog button end
+
 // active button start
 document.getElementById("show-history").addEventListener("click", function () {
   document.getElementById("show-donation").classList.add("main-button");

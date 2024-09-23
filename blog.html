@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/blog.png" type="image/x-icon" />
+    <title>Donate Bangladesh Blog</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <!-- Navigation-bar start -->
+      <nav class="nav-bar">
+        <button id="home-button" class="btn-home">Home</button>
+        <div class="main-logo">
+          <img src="assets/logo.png" alt="picture of main logo" />
+          <h2>Donate Bangladesh</h2>
+        </div>
+        <div class="total-coins">
+          <img src="assets/coin.png" alt="picture of a coin" />
+          <h2 id="main-balance">5500</h2>
+          <h2>BDT</h2>
+        </div>
+      </nav>
+      <!-- Navigation-bar end -->
+    </header>
+    <main class="blog-main-section">
+      <div class="title">
+        <h1>Important FAQ</h1>
+        <img src="assets/faq.png" alt="" />
+      </div>
+
+      <div class="all-questions">
+        <div class="question-container">
+          <div class="question">
+            <h3>What is the Document Object Model (DOM)?</h3>
+            <img id="arrow1" src="assets/arrow-down.png" alt="" />
+          </div>
+          <div id="answer1" class="answer hidden">
+            <p>
+              DOM represents the structure of any HTML document as a tree of
+              objects. Each elements of the tree are called nodes.
+            </p>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">
+            <h3>How do you select an element from the DOM?</h3>
+            <img id="arrow2" src="assets/arrow-down.png" alt="" />
+          </div>
+          <div id="answer2" class="answer hidden">
+            <p>
+              To select an element from the DOM a commonly used method is
+              <span style="background-color: yellow"
+                >document.getElementById()</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">
+            <h3>
+              What is event delegation in context of the DOM and why is it
+              useful?
+            </h3>
+            <img id="arrow3" src="assets/arrow-down.png" alt="" />
+          </div>
+          <div id="answer3" class="answer hidden">
+            <p>
+              Event delegation is a technique in the DOM (Document Object Model)
+              that allows you to manage events efficiently, especially when
+              you're dealing with many elements. It is very useful because of
+              performance efficiency and clear code.
+            </p>
+          </div>
+        </div>
+
+        <div id="last-question" class="question-container">
+          <div class="question">
+            <h3>
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </h3>
+            <img id="arrow4" src="assets/arrow-down.png" alt="" />
+          </div>
+          <div id="answer4" class="answer hidden">
+            <p>
+              There are various ways how element's attributes and styles can be
+              manipulated. Some commonly used methods are,
+              <span style="background-color: yellow">setAttribute()</span>
+              <span style="background-color: yellow">getAttribute()</span>
+              <span style="background-color: yellow">removeAttribute()</span>
+              etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <h5>2024 All Rights Reserved.</h5>
+    </footer>
+    <script src="scripts/utilities.js"></script>
+    <script>
+      document
+        .getElementById("home-button")
+        .addEventListener("click", function () {
+          window.location.href = "/index.html";
+        });
+
+      document.getElementById("arrow1").addEventListener("click", function () {
+        getAnswerById("answer1");
+      });
+      document.getElementById("arrow2").addEventListener("click", function () {
+        getAnswerById("answer2");
+      });
+      document.getElementById("arrow3").addEventListener("click", function () {
+        getAnswerById("answer3");
+      });
+      document.getElementById("arrow4").addEventListener("click", function () {
+        getAnswerById("answer4");
+      });
+    </script>
+  </body>
+</html>
