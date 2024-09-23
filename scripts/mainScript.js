@@ -50,7 +50,7 @@ document
       const div = document.createElement("div");
       div.classList.add("history-msg");
       div.innerHTML = `
-        <p class = "history-text">${noakhaliDonate} Taka is Donated for flood at Noakhali, Bangladesh.</p>
+        <p class = "history-text">${noakhaliDonate} Taka is Donated for Flood at Noakhali, Bangladesh.</p>
         <p>${currentDate}</p>
       `;
       document.getElementById("history-container").appendChild(div);
@@ -63,3 +63,89 @@ document.getElementById("btn-close").addEventListener("click", function () {
   document.getElementById("modal-section").classList.add("hidden");
 });
 // noakhali end
+
+// feni start
+document
+  .getElementById("feni-donate-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const feniDonate = getInputFieldValue("feni-input");
+
+    if (feniDonate <= 0 || isNaN(feniDonate)) {
+      alert("Invalid input!!");
+      return;
+    } else {
+      const feniBalance = getTextFieldValue("feni-balance");
+      const mainBalance = getTextFieldValue("main-balance");
+      if (feniDonate > mainBalance) {
+        alert(
+          "Failed to donate!!\nEntered amount exceeds your current balance."
+        );
+        return;
+      }
+      const newFeniBalance = feniBalance + feniDonate;
+      const newMainBalance = mainBalance - feniDonate;
+
+      document.getElementById("feni-balance").innerText = newFeniBalance;
+      document.getElementById("main-balance").innerText = newMainBalance;
+      const currentDate = new Date();
+      const div = document.createElement("div");
+      div.classList.add("history-msg");
+      div.innerHTML = `
+      <p class = "history-text">${feniDonate} Taka is Donated for Flood Relief in Feni, Bangladesh.</p>
+      <p>${currentDate}</p>
+    `;
+      document.getElementById("history-container").appendChild(div);
+      document.getElementById("no-donation").classList.add("hidden");
+      document.getElementById("modal-section").classList.remove("hidden");
+    }
+  });
+
+document.getElementById("btn-close").addEventListener("click", function () {
+  document.getElementById("modal-section").classList.add("hidden");
+});
+// feni end
+
+// quota start
+document
+  .getElementById("quota-donate-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const quotaDonate = getInputFieldValue("quota-input");
+
+    if (quotaDonate <= 0 || isNaN(quotaDonate)) {
+      alert("Invalid input!!");
+      return;
+    } else {
+      const quotaBalance = getTextFieldValue("quota-balance");
+      const mainBalance = getTextFieldValue("main-balance");
+      if (quotaDonate > mainBalance) {
+        alert(
+          "Failed to donate!!\nEntered amount exceeds your current balance."
+        );
+        return;
+      }
+      const newQuotaBalance = quotaBalance + quotaDonate;
+      const newMainBalance = mainBalance - quotaDonate;
+
+      document.getElementById("feni-balance").innerText = newQuotaBalance;
+      document.getElementById("main-balance").innerText = newMainBalance;
+      const currentDate = new Date();
+      const div = document.createElement("div");
+      div.classList.add("history-msg");
+      div.innerHTML = `
+      <p class = "history-text">${quotaDonate} Taka is Donated for Aid for Injured in the Quota Movement.</p>
+      <p>${currentDate}</p>
+    `;
+      document.getElementById("history-container").appendChild(div);
+      document.getElementById("no-donation").classList.add("hidden");
+      document.getElementById("modal-section").classList.remove("hidden");
+    }
+  });
+
+document.getElementById("btn-close").addEventListener("click", function () {
+  document.getElementById("modal-section").classList.add("hidden");
+});
+// quota end
