@@ -9,9 +9,7 @@
 
 .header-section{
     max-width: 1440px;
-    margin: 0 auto;
-    
-    
+    margin: 0 auto;   
 }
 
 .nav-bar{
@@ -81,8 +79,6 @@
     padding: 32px;
 }
 
-.card-image{}
-
 .card-coin-amount{
     background-color: rgba(17, 17, 17, 0.05);
     border: none;
@@ -135,4 +131,30 @@
     color: rgba(17, 17, 17);
     font-size: 1.25rem;
     font-weight: 600; 
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 576px){
+
+    .nav-bar{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .main-buttons-container{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .cards{
+        flex-direction: column;
+        margin: 0 20px ;
+    }
+
+    .card-image>img{
+        width: 100%;
+    }
 }
