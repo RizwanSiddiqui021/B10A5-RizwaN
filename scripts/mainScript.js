@@ -100,7 +100,7 @@ document
       const div = document.createElement("div");
       div.classList.add("history-msg");
       div.innerHTML = `
-      <p class = "history-text">${feniDonate} Taka is Donated for Flood Relief in Feni,Bangladesh.</p>
+      <p class = "history-text">${feniDonate} Taka is Donated for Flood Relief in Feni, Bangladesh.</p>
       <p>${currentDate}</p>
     `;
       document.getElementById("history-container").appendChild(div);
