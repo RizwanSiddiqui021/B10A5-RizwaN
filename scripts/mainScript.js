@@ -55,6 +55,11 @@ document
       `;
       document.getElementById("history-container").appendChild(div);
       document.getElementById("no-donation").classList.add("hidden");
+      document.getElementById("modal-section").classList.remove("hidden");
     }
   });
+
+document.getElementById("btn-close").addEventListener("click", function () {
+  document.getElementById("modal-section").classList.add("hidden");
+});
 // noakhali end

@@ -151,6 +151,48 @@
     font-weight: 600; 
 }
 
+.modal-card{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 40px 80px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-card>h3{
+    color: rgba(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 12px; 
+}
+
+.modal-card>p{
+    margin-top: 14px;
+    color: rgba(17, 17, 17);
+    font-size: 0.875rem;
+    font-weight: 500; 
+}
+
+.modal-card>h4{
+    margin-top: 12px;
+    color: rgba(17, 17, 17);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
+
+#btn-close{
+    border: 1px solid rgb(180, 244, 97);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
 #history-container{
     max-width: 1140px;
     margin: 0 auto;
