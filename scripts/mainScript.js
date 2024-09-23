@@ -1,6 +1,6 @@
 // blog button start
 document.getElementById("blog-button").addEventListener("click", function () {
-  window.location.href = "/blog.html";
+  window.location.href = "blog.html";
 });
 // blog button end
 
