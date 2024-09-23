@@ -1,3 +1,16 @@
+// active button
+document.getElementById("show-history").addEventListener("click", function () {
+  document.getElementById("show-donation").classList.add("main-button");
+  document.getElementById("show-donation").classList.remove("active-btn");
+  document.getElementById("show-history").classList.add("active-btn");
+});
+
+document.getElementById("show-donation").addEventListener("click", function () {
+  document.getElementById("show-history").classList.add("main-button");
+  document.getElementById("show-history").classList.remove("active-btn");
+  document.getElementById("show-donation").classList.add("active-btn");
+});
+
 // show section
 document.getElementById("show-donation").addEventListener("click", function () {
   showSectionById("donate-section");
@@ -8,7 +21,6 @@ document.getElementById("show-history").addEventListener("click", function () {
 });
 
 // noakhali start
-
 document
   .getElementById("noakhali-donate-btn")
   .addEventListener("click", function (event) {
@@ -34,7 +46,15 @@ document
       document.getElementById("noakhali-balance").innerText =
         newNoakhaliBalance;
       document.getElementById("main-balance").innerText = newMainBalance;
+      const currentDate = new Date();
+      const div = document.createElement("div");
+      div.classList.add("history-msg");
+      div.innerHTML = `
+        <p class = "history-text">${noakhaliDonate} Taka is Donated for flood at Noakhali, Bangladesh.</p>
+        <p>${currentDate}</p>
+      `;
+      document.getElementById("history-container").appendChild(div);
+      document.getElementById("no-donation").classList.add("hidden");
     }
   });
-
 // noakhali end

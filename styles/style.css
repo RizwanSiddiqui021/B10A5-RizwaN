@@ -61,7 +61,7 @@
     gap: 16px;
 }
 
-.btn-donation, .btn-history{
+.main-button{
     padding: 16px 32px;
     background-color: rgba(255,255,255,1);
     border: 1px	solid rgba(17, 17, 17, 0.3);
@@ -151,8 +151,29 @@
     font-weight: 600; 
 }
 
-#history-section{
-    min-height: 50vh;
+#history-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.history>h5{
+    text-align: center;
+    margin: 100px 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.history-msg{
+    border: 1px	solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.history-text{
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .footer-section{
@@ -186,5 +207,9 @@
 
     .card-image>img{
         width: 100%;
+    }
+
+    .history-msg{
+        margin: 20px 20px;
     }
 }

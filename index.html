@@ -26,8 +26,8 @@
 
       <!-- Main-buttons start -->
       <div class="main-buttons-container">
-        <button id="show-donation" class="btn-donation">Donation</button>
-        <button id="show-history" class="btn-history">History</button>
+        <button id="show-donation" class="active-btn">Donation</button>
+        <button id="show-history" class="main-button">History</button>
       </div>
       <!-- Main-buttons end -->
     </header>
@@ -159,8 +159,9 @@
         <!-- Quota-card end -->
       </section>
 
-      <section id="history-section" class="hidden">
-        <h5>this is history-section</h5>
+      <section id="history-section" class="history hidden">
+        <h5 id="no-donation">No Donation has yet been made!!</h5>
+        <div id="history-container"></div>
       </section>
     </main>
 
